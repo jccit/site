@@ -1,0 +1,4 @@
+baseURL = "https://citrine.dev/"
+languageCode = "en-us"
+title = "Citrine.dev"
+theme = "jcit"
