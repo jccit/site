@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {{ template "_internal/opengraph.html" . }}
+    {{ template "_internal/twitter_cards.html" . }}
     <title>{{ .Title }}</title>
     <link rel="canonical" href="{{ .Permalink }}">
-
     {{ $style := resources.Get "css/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
 </head>
 <body>
+    <a href="#main" class="a11y-skip">Skip to main content</a>
+    {{ partial "header.html" . }}
+
+    <main id="main" role="main">

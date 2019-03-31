@@ -1,5 +1,11 @@
 {{ partial "head.html" . }}
 
-👋
+<h1 id="recent">Recent posts</h1>
+
+<section class="blog-posts" role="list" aria-labelledby="recent">
+    {{ range first 10 .Site.RegularPages }}
+        {{ .Render "summary" }}
+    {{ end }}
+</section>
 
 {{ partial "footer.html" . }}

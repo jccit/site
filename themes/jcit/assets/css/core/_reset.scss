@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+::selection,
+::-moz-selection,
+::-webkit-selection {
+    background: $accent;
+    color: $grey-90;
+}
+
+html, body {
+    background-color: $background;
+    color: $text;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: map-get($vars, footer-height) + map-get($vars, footer-padding);
+    padding-bottom: calc(var(--footer-height) + var(--footer-padding))
+}

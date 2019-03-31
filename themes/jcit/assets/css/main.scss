@@ -1,7 +1,16 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    margin-top: 10px;
-    text-align: center;
-    font-size: 30px;
-}
+// Mixins and variables
+@import "colors";
+@import "variables";
+@import "mixins/grid";
+@import "mixins/var";
+
+// Core stuff
+@import "core/reset";
+@import "core/type";
+
+// Components
+@import "components/container";
+@import "components/card";
+@import "components/nav";
+@import "components/a11y";
+@import "components/footer";

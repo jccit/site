@@ -1,0 +1,30 @@
+.main-nav {
+    background: $grey-90-a30;
+    margin-bottom: 20px;
+    border-bottom: 1px solid $accent;
+
+    .nav__inner {
+        @extend .container;
+        padding: 20px;
+        font-family: $font-mono;
+
+        a {
+            color: $text;
+            text-decoration: none;
+        }
+    }
+
+    .nav__name {
+        display: inline-block;
+    }
+
+    .nav__right {
+        float: right;
+        list-style: none;
+        display: inline-flex;
+
+        li {
+            margin-left: 15px;
+        }
+    }
+}

@@ -1,0 +1,95 @@
+/// ----------------------
+/// CSS GRID - IE POLYFILL
+/// ----------------------
+///
+/// Write CSS grid-like code and get native CSS Grid in modern browsers and MS Grid in IE 10+
+///
+/// Documentation
+/// -------------
+/// Just @include ieGrid($col) and pass the number of columns.
+/// If you want more than one row, set the max number of rows in the second param (1 by default)
+/// 
+/// To add gaps, use @include ieGridGaps($width, $height), omit height if width and height are equal
+
+@mixin ieGrid($cols, $rows: 1) {
+    @supports(display: grid) {
+        display: grid !important;
+    }
+    
+    display: -ms-grid;
+
+    @if (type-of($cols) == number) {
+        @include ieGridColumns($cols);
+
+        & > * {
+            @include ieGridElements($cols, $rows);
+        }
+    } @else {
+        grid-template-columns: unquote($cols);
+        -ms-grid-columns: unquote($cols);
+    }
+
+    @if ($rows > 1) {
+        @include ieGridRows($rows);
+    }
+}
+
+@mixin ieGridColumns($cols) {
+    $colStr: "";
+
+    @for $i from 1 through $cols {
+        $colStr: $colStr + "1fr ";
+    }
+
+    grid-template-columns: repeat($cols, 1fr);
+    -ms-grid-columns: unquote($colStr);
+}
+
+@mixin ieGridRows($rows) {
+    $rowStr: "";
+
+    @for $i from 1 through $rows {
+        $rowStr: $rowStr + "1fr ";
+    }
+
+    -ms-grid-rows: unquote($rowStr);
+}
+
+@mixin ieGridElements($cols, $rows: 1) {
+    @for $i from 1 through $cols {
+        &:nth-child(#{$cols}n + #{$i}) {
+            -ms-grid-column: $i;
+        }
+    }
+
+    @for $j from 0 through $rows {
+        &:nth-child(n + #{$cols * $j + 1}):nth-child(-n + #{$cols * ($j + 1)}) {
+            -ms-grid-row: $j + 1;
+        }
+    }
+}
+
+@mixin ieGridGap($colGap, $rowGap: 0) {
+    @if ($rowGap > 0) {
+        grid-column-gap: $colGap;
+        grid-row-gap: $rowGap;
+
+        & > * {
+            margin: $rowGap / 2 $colGap / 2;
+
+            @supports(grid-column-gap: $colGap) {
+                margin: 0;
+            }
+        }
+    } @else {
+        grid-gap: $colGap;
+
+        & > * {
+            margin: $colGap / 2;
+
+            @supports(grid-gap: $colGap) {
+                margin: 0;
+            }
+        }
+    }
+}
