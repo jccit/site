@@ -2,6 +2,8 @@ baseURL = "https://citrine.dev/"
 languageCode = "en-us"
 title = "jcit"
 theme = "jcit"
+pygmentsCodeFences = true
+pygmentsUseClasses = true
 
 [author]
     name = "jcit"

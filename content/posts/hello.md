@@ -3,9 +3,18 @@ title: Hello
 date: "2019-03-10"
 ---
 
-
-
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a nisl a mi egestas tincidunt. Suspendisse pellentesque eget turpis eget molestie. Quisque mollis ac quam quis rhoncus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla posuere ipsum et mi mollis, eu volutpat turpis feugiat. Maecenas a ullamcorper enim. Duis sed ipsum at nibh rutrum molestie id sit amet nunc. Mauris posuere massa non feugiat convallis. Morbi ligula mi, vestibulum eget urna vitae, elementum aliquet est. Duis condimentum varius aliquam. Aenean pellentesque ultricies turpis, quis varius justo ullamcorper quis. Aliquam posuere lorem sed ipsum fermentum, in rhoncus sem dictum. Vivamus lobortis augue urna, sit amet pellentesque metus pulvinar sit amet. Vestibulum pharetra convallis nunc, vel viverra purus cursus eget.
+
+```html
+<nav role="navigation" class="main-nav">
+    <div class="nav__inner">
+        <a class="nav__name" href="/">jcit</a>
+        <ul class="nav__right">
+            <li><a href="/blog">blog</a></li>
+        </ul>
+    </div>
+</nav>
+```
 
 Morbi faucibus metus et turpis feugiat tristique. Nullam luctus lacus sed justo luctus, ac venenatis orci pharetra. Mauris molestie commodo venenatis. Sed quis nisi iaculis tellus ullamcorper volutpat vitae sit amet velit. Duis ac tincidunt leo, vel eleifend tortor. Nullam est tellus, facilisis in congue non, vulputate id massa. Morbi gravida arcu non nisl sollicitudin facilisis.
 
@@ -13,4 +22,4 @@ Fusce quis pellentesque mauris, nec maximus odio. Suspendisse dui elit, tincidun
 
 Cras ornare blandit dignissim. Nunc auctor libero vitae felis gravida, quis porta metus tincidunt. In ultrices erat est, non efficitur eros consequat eget. Proin egestas turpis id est finibus, vel accumsan magna imperdiet. Mauris molestie felis elementum ipsum aliquam volutpat ac id purus. In hac habitasse platea dictumst. Nullam eu consectetur nulla, vitae fermentum turpis. Cras posuere elit at dolor ultricies, vitae pellentesque lorem pretium. Sed id ante posuere, gravida lacus non, venenatis risus. Nunc dictum non nibh et blandit.
 
-Aliquam erat tortor, vulputate ut lobortis nec, sollicitudin et elit. Nullam a nisl id magna convallis pulvinar ultricies dictum dui. Vestibulum euismod nibh sed ipsum egestas, eget volutpat tellus tempus. Proin aliquet rutrum magna quis convallis. Integer diam sapien, aliquet consequat nunc vitae, tristique sodales leo. Ut ut mauris sed eros porttitor ornare. Phasellus volutpat odio vitae nisi tempus auctor. Quisque et dapibus lectus. Suspendisse pellentesque lobortis lectus in commodo. Mauris aliquet varius risus ac lobortis. Duis non dignissim mauris, vel porta felis. Nunc euismod, lorem quis elementum scelerisque, justo augue faucibus velit, in vulputate quam dui at urna. 
+Aliquam erat tortor, vulputate ut lobortis nec, sollicitudin et elit. Nullam a nisl id magna convallis pulvinar ultricies dictum dui. Vestibulum euismod nibh sed ipsum egestas, eget volutpat tellus tempus. Proin aliquet rutrum magna quis convallis. Integer diam sapien, aliquet consequat nunc vitae, tristique sodales leo. Ut ut mauris sed eros porttitor ornare. Phasellus volutpat odio vitae nisi tempus auctor. Quisque et dapibus lectus. Suspendisse pellentesque lobortis lectus in commodo. Mauris aliquet varius risus ac lobortis. Duis non dignissim mauris, vel porta felis. Nunc euismod, lorem quis elementum scelerisque, justo augue faucibus velit, in vulputate quam dui at urna.
