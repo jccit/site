@@ -1,3 +1,6 @@
 .blog-posts {
     margin-top: 20px;
+    $grid-col: 3;
+    $grid-row: 2;
+    @include ieGrid($grid-col, $grid-row);
 }

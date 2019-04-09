@@ -1,4 +1,9 @@
-<article role="listitem">
-    <time class="date">{{ .Date.Format "2006-01-02" }}</time>
-    <a href="{{ .Permalink }}">{{ .Title }}</a>
+<article role="listitem" class="card{{ if not (isset .Params "image") }} noimage{{ end }}">
+    <figure>
+
+    </figure>
+
+    <div class="content">
+        <h2><a href="{{ .Permalink }}" class="no-under">{{ .Title }}</a></h2>
+    </div>
 </article>

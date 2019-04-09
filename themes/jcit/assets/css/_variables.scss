@@ -1,11 +1,19 @@
 // Sizes
-$content-width: 1100px;
+$content-padding: 2rem;
+$content-width: 56rem;
+$post-width: 48rem;
+$text-width: 550px;
 $smooth: cubic-bezier(.07,.95,0,1);
 
 // Colours
 $background: $grey-80;
 $text: $grey-20;
 $accent: $orange-50;
+$card: darken($grey-70, 2%);
+
+// Patterns
+$pattern-shade-1: $accent;
+$pattern-shade-2: $grey-70;
 
 // Fonts
 $font-body: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", sans-serif;

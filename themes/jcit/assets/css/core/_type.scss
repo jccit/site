@@ -19,21 +19,35 @@ a {
     position: relative;
     outline: 0;
 
-    &:after {
-        content: '';
-        position: absolute;
-        background-color: $text;
-        bottom: -5px;
-        left: 50%;
-        transform: translateX(-50%);
-        height: 1px;
-        width: 0px;
-        transition: width 0.3s $smooth;
+    &.no-under {
+        position: initial;
     }
 
-    &:focus, &:hover {
+    &:not(.no-under) {
         &:after {
-            width: 100%;
+            content: '';
+            position: absolute;
+            background-color: $text;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 1px;
+            width: 0px;
+            transition: width 0.3s $smooth;
+        }
+
+        &:focus, &:hover {
+            &:after {
+                width: 100%;
+            }
         }
     }
+}
+
+hr {
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid $text;
+    margin: 10px 0 40px;
+    width: 100px;
 }

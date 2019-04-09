@@ -1,5 +1,11 @@
 .container, main {
     margin: 0 auto;
-    padding: 0 20px;
-    max-width: $content-width
+    padding: 0 $content-padding;
+    max-width: $content-width;
+}
+
+.post-container {
+    margin: 0 auto;
+    padding: 0 $content-padding;
+    max-width: $post-width;
 }
