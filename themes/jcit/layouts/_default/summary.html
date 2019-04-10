@@ -1,9 +1,17 @@
-<article role="listitem" class="card{{ if not (isset .Params "image") }} noimage{{ end }}">
-    <figure>
-
+<article role="listitem" class="card{{ if not (isset .Params "cover") }} noimage{{ end }}">
+    <figure aria-hidden="true" role="presentation">
+    {{ if isset .Params "cover" }}
+        {{ $rawImg := .Resources.GetMatch (printf "**%s" .Params.Cover) }}
+        {{ $image := $rawImg.Fill "600x400 q70 smart" }}
+        {{ with $image }}
+            <img src="{{ .RelPermalink }}" alt="{{ .Title }}">
+        {{ end }}
+    {{ end }}
     </figure>
 
-    <div class="content">
+    <div class="card__content">
         <h2><a href="{{ .Permalink }}" class="no-under">{{ .Title }}</a></h2>
+        <p class="summary">{{ .Summary }}</p>
+        <time class="date">{{ .Date.Format "2006-01-02" }}</time>
     </div>
 </article>

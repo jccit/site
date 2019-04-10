@@ -2,6 +2,9 @@ html, body {
     font-size: 16px;
     font-family: $font-body;
     text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.4;
+    letter-spacing: 0.01rem;
 }
 
 h1 {
@@ -48,6 +51,7 @@ hr {
     outline: 0;
     border: 0;
     border-bottom: 1px solid $text;
-    margin: 10px 0 40px;
-    width: 100px;
+    margin: 20px 0 40px;
+    min-width: 100px;
+    width: 20%;
 }

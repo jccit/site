@@ -4,6 +4,7 @@ title = "jcit"
 theme = "jcit"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
+summaryLength = 12
 
 [author]
     name = "jcit"

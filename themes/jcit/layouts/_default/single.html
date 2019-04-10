@@ -1,6 +1,9 @@
 {{ partial "head.html" . }}
 
 <h1>{{ .Title }}</h1>
+<span class="post-meta">
+    <time class="date">{{ .Date.Format "Monday, January 2, 2006" }}</time><span class="reading-time" aria-hidden="true">{{ .ReadingTime }} minute read</span>
+</span>
 <hr>
 
 <article class="post">

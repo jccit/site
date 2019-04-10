@@ -14,4 +14,4 @@
 <body>
     <a href="#main" class="a11y-skip">Skip to main content</a>
     {{ partial "header.html" . }}
-    <main id="main" role="main"{{ if eq .Type "posts" }}class="post-container"{{ end }}>
+    <main id="main" role="main"{{ if eq .Type "posts" }} class="post-container"{{ end }}>

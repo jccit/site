@@ -1,0 +1,19 @@
+@mixin breakout($inner-width, $outer-width) {
+    $diff: $outer-width - $inner-width;
+
+    width: calc(100% + #{$diff});
+    margin-left: #{-($diff) / 2};
+    margin-right: #{-($diff) / 2};
+
+    @media screen and (max-width: $outer-width) and (min-width: $inner-width) {
+        width: calc(100vw - 40px);
+        margin-left: calc(50% - 50vw + 20px);
+        margin-right: 0;
+    }
+
+    @media screen and (max-width: $inner-width) {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

@@ -6,3 +6,11 @@
         </ul> -->
     </div>
 </nav>
+
+{{ if eq .Type "posts" }}
+{{ if isset .Params "cover" }}
+<header class="post-header" aria-hidden="true" role="presentation">
+    <img src="{{ .Params.Cover }}" alt="{{ .Title }}">
+</header>
+{{ end }}
+{{ end }}
