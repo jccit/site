@@ -4,4 +4,12 @@
     $grid-row: 2;
     @include ieGrid($grid-col, $grid-row);
     @include ieGridGap(20px);
+
+    @media screen and (max-width: 750px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width: 520px) {
+        grid-template-columns: 1fr;
+    }
 }
