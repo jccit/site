@@ -5,6 +5,7 @@
 @import "mixins/var";
 @import "mixins/pattern";
 @import "mixins/breakout";
+@import "mixins/svg_url";
 
 // Core stuff
 @import "core/reset";
@@ -19,3 +20,4 @@
 @import "components/blog_posts";
 @import "components/post";
 @import "components/code";
+@import "components/intro";

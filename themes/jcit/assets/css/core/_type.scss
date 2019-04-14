@@ -39,21 +39,35 @@ a {
     }
 
     &:not(.no-under) {
+        transition: all 0.4s $smooth;
+
         &:after {
             content: '';
             position: absolute;
             background-color: $text;
-            bottom: -5px;
+            bottom: -3px;
             left: 50%;
             transform: translateX(-50%);
             height: 1px;
             width: 0px;
-            transition: width 0.3s $smooth;
+            transition: all 0.4s $smooth;
+
+            article & {
+                width: 100%;
+            }
         }
 
         &:focus, &:hover {
             &:after {
                 width: 100%;
+            }
+
+            article & {
+                opacity: 0.7;
+
+                &:after {
+                    transform: translateX(-50%) translateY(2px);
+                }
             }
         }
     }

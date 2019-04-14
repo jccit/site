@@ -1,0 +1,43 @@
+.intro {
+    margin-bottom: 40px;
+
+    h1 {
+        margin-bottom: 10px;
+    }
+
+    .arrow {
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 5px;
+        display: inline-block;
+        position: relative;
+        transition: opacity 0.8s $smooth;
+
+        &:before {
+            content: '';
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            top: 4px;
+            right: -18px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: $text;
+            transition: transform 0.8s $smooth;
+            @include background-svg('<svg width="256" height="256" viewBox="0 0 8 16" version="1.1" aria-hidden="true"><path fill="#ededf0" fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3l5 5z"></path></svg>');
+        }
+
+        &:after {
+            display: none;
+        }
+
+        &:hover, &:focus {
+            opacity: 0.6;
+
+            &:before {
+                transform: translateX(5px);
+            }
+        }
+    }
+}
