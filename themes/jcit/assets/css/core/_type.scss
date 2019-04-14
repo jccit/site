@@ -24,6 +24,18 @@ a {
 
     &.no-under {
         position: initial;
+
+        &:after {
+            display: none;
+        }
+
+        &:hover, &:focus {
+            color: $grey-40;
+        }
+
+        svg {
+            fill: currentColor;
+        }
     }
 
     &:not(.no-under) {
