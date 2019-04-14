@@ -4,7 +4,7 @@ date: "2019-04-11"
 cover: edge.jpg
 ---
 
-A few days ago, Microsoft released the first version of their new browser, Microsoft Edge. That name might sound familiar if you're a Windows 10 user, since it's also the name of their existing browser. So why the re-release?
+A few days ago, Microsoft finally released the the first canary release of Chromium Edge.
 
 Microsoft is releasing this new and improved Edge to hopefully try and shake the stigma that Microsoft browsers are horribly outdated and quirky. The solution? They're ditching the EdgeHTML rendering engine and the Chakra Javascript engine. Instead they will be using Chromium as the base for the new browser.
 
@@ -26,12 +26,14 @@ Microsoft switching Edge's browser engine from EdgeHTML to Chromium means we los
 
 At one point in the early 2000s, IE had over 90% market share. These early versions of IE didn't have very good standards support, which explains the issues that we all face with IE. But since IE was the most used browser in the world by far, it meant that developers had to build their sites to support IE's in-compliant rendering engine, hurting other browsers.
 
-We may be entering into a similar situation in the next few years. Only with Google instead of Microsoft. Google already operate the 2 biggest websites on the internet and have the world's most popular browser. They have used this position to push new technologies such as the service worker and PWA. While the service worker and PWAs are interesting new tech, their adoption was largely driven by Chrome. Just take a look at which company was largely responsible for the [service worker spec](https://w3c.github.io/ServiceWorker/)
-
 ![A screenshot of the service worker specification. All but 1 of the editors work at Google](service-worker-spec.png)
+
+I fear we will start to see more and more browser features introduced in Chrome with the other browsers playing catch-up. The above image is from the [Service Worker spec](https://w3c.github.io/ServiceWorker/), most of the editors work at Google.
 
 Microsoft switching to Chromium for their browser may seem like a great idea if you build websites for a living. However we will see less innovation that benefits the consumer and more that will benefit Google.
 
-We've already seen this with AMP and AMP for email. Projects that are supposedly separate from Google (look it's even got it's own [Github org](https://github.com/ampproject)!). However Google has rewarded sites adopting their AMP format by placing news articles using AMP higher up in the results and marking them with a lightning bolt icon.
+We've already seen this with AMP and AMP for email. Projects that are supposedly separate from Google (look it's even got it's own [Github org](https://github.com/ampproject)!). However Google has rewarded sites adopting AMP by placing news articles using AMP higher up in the results and marking them with a lightning bolt icon.
 
-We can only expect to see more of this as Chrome's market share grows
+![Skype for web showing an error message saying "Browser not supported"](skype.jpg)
+
+Assuming Chrome's market share continues to grow, we can only expect to see more "Best viewed in Chrome" messages in the years to come.
