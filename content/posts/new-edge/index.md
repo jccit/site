@@ -1,6 +1,6 @@
 ---
 title: Why the New Edge Is Bad for the Web
-date: "2019-03-11"
+date: "2019-04-11"
 cover: edge.jpg
 ---
 

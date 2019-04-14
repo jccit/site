@@ -5,6 +5,19 @@
     @include ieGrid($grid-col, $grid-row);
     @include ieGridGap(20px);
 
+    @supports (display: grid) {
+        grid-template-columns: repeat(6, 1fr);
+
+        article {
+            grid-column: span 2;
+
+            // First 2 wide
+            &:nth-of-type(-n+2) {
+                grid-column: span 3;
+            }
+        }
+    }
+
     @media screen and (max-width: 750px) {
         grid-template-columns: repeat(2, 1fr);
     }
