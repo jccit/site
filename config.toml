@@ -1,4 +1,4 @@
-baseURL = "https://citrine.dev/"
+baseURL = "https://jcit.dev/"
 languageCode = "en-us"
 title = "jcit"
 theme = "jcit"
