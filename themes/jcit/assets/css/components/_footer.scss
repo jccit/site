@@ -41,6 +41,16 @@ footer {
         }
     }
 
+    .right {
+        a {
+            margin-right: 15px;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+
     @media screen and (max-width: 720px) {
         .container {
             flex-direction: column;
