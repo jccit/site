@@ -2,7 +2,7 @@
 title: About me
 ---
 
-👋 Hi, I'm Joe. I'm a front-end web developer by trade, but I like to experiment in a bunch of different languages. Skilled in Javascript, PHP and C++.
+👋 Hi, I'm Joe. I'm a front-end web developer by trade, but I like to experiment in a bunch of different languages. I'm skilled in Javascript, PHP, C++ and Go.
 
 Currently, I'm working at a digital agency, building e-commerce sites for clients.
 
