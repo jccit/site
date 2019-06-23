@@ -6,8 +6,10 @@
 @import "mixins/pattern";
 @import "mixins/breakout";
 @import "mixins/svg_url";
+@import "mixins/font";
 
 // Core stuff
+@import "core/fonts";
 @import "core/reset";
 @import "core/type";
 
