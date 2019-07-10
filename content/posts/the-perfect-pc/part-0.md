@@ -1,6 +1,6 @@
 ---
 title: The Perfect PC - Part 0
-date: "2019-06-23"
+date: "2019-07-10"
 ---
 
 For the last few years, I've been switching between Linux and Windows on my home PC. My reasoning is pretty simple, Linux is great to develop on. However I like playing games on my PC and not all games support Linux. For these games that don't support Windows, I end up having to switch back to my Windows partition.
